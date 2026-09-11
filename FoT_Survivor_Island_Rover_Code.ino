@@ -1,5 +1,5 @@
 /*
-Code To get started with Around the table challenge
+Original Author: Shawn Hettiarachchi
 
 Block: X
 
@@ -9,7 +9,7 @@ Last Edited: 09/03/2025
 
 // Pin constants,  set them equal to a digital port between 10-13
 
-const int MOTOR_POWER_A = 3;// left blank on purpose
+const int MOTOR_POWER_A = 3;
 
 const int MOTOR_POWER_B = 11;
 
@@ -66,6 +66,14 @@ void loop() {
   slowDown();
 
   turnLeft90();
+
+  while (true) {
+
+    digitalWrite(MOTOR_DIR_A, LOW);
+
+    digitalWrite(MOTOR_DIR_B, LOW);
+    
+  }
   
 }
 
